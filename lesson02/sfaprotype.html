@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout01[練習]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+    <!-- Header[start] -->
+    <header class="text-gray-600 body-font bg-cyan-500">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <h2 class="text-gray-500">Web発注システム</h2>
+            <span class="ml-3 text-xl"></span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900">リンク1</a>
+            <a class="mr-5 hover:text-gray-900">リンク2</a>
+            <a class="mr-5 hover:text-gray-900">リンク3</a>
+            <a class="mr-5 hover:text-gray-900">リンク4</a>
+          </nav>
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-green-300 rounded text-base mt-4 md:mt-0">ログアウト
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+    <!-- Header[end] -->
+
+
+    <!-- MainContents[start] -->
+    <section class="justify-left items-center h-screen" >
+        <table class="table-auto">
+            <thead>
+              <tr>
+                <th class="px-4 py-2">商品名</th>
+                <th class="px-4 py-2">メーカー</th>
+                <th class="px-4 py-2">取引先番号</th>
+                <th class="px-4 py-2">商品コード</th>
+                <th class="px-4 py-2">原価</th>
+                <th class="px-4 py-2">在庫数</th>
+                <th class="px-4 py-2">総額(在庫数×原価)</th>
+                <th class="px-4 py-2">入荷日</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="border px-4 py-2">W900 H450 軽量アルミ板</td>
+                <td class="border px-4 py-2">松風</td>
+                <td class="border px-4 py-2">111</td>
+                <td class="border px-4 py-2">105876901</td>
+                <td class="border px-4 py-2">45,000</td>
+                <td class="border px-4 py-2">150</td>
+                <td class="border px-4 py-2">6,750,000</td>
+                <th class="border px-4 py-2">2023/10/05</th>
+            </tr>
+            <tr class="bg-gray-200">
+                <td class="border px-4 py-2">W1800 H900 軽量アルミ板</td>
+                <td class="border px-4 py-2">松風</td>
+                <td class="border px-4 py-2">111</td>
+                <td class="border px-4 py-2">105876902</td>
+                <td class="border px-4 py-2">90,000</td>
+                <td class="border px-4 py-2">100</td>
+                <td class="border px-4 py-2">9,000,000</td>
+                <th class="border px-4 py-2">2023/10/05</th>
+            </tr>
+            <tr>
+                <td class="border px-4 py-2">W450 H450 軽量アルミ板</td>
+                <td class="border px-4 py-2">松風</td>
+                <td class="border px-4 py-2">111</td>
+                <td class="border px-4 py-2">105876903</td>
+                <td class="border px-4 py-2">25,000</td>
+                <td class="border px-4 py-2">150</td>
+                <td class="border px-4 py-2">3,750,000</td>
+                <th class="border px-4 py-2">メーカー欠品中</th>
+            </tr>
+            <tr class="bg-gray-200">
+                <td class="border px-4 py-2">錆止め処理 100mm アルミ用ネジ</td>
+                <td class="border px-4 py-2">松風</td>
+                <td class="border px-4 py-2">111</td>
+                <td class="border px-4 py-2">205876900</td>
+                <td class="border px-4 py-2">20</td>
+                <td class="border px-4 py-2">100,000</td>
+                <td class="border px-4 py-2">2,000,000</td>
+                <th class="border px-4 py-2">2023/09/05</th>
+            </tr>
+            <tr>
+                <td class="border px-4 py-2">錆止め処理 120mm アルミ用ネジ</td>
+                <td class="border px-4 py-2">松風</td>
+                <td class="border px-4 py-2">111</td>
+                <td class="border px-4 py-2">205876901</td>
+                <td class="border px-4 py-2">22</td>
+                <td class="border px-4 py-2">100,000</td>
+                <td class="border px-4 py-2">2,200,000</td>
+                <th class="border px-4 py-2">2023/10/15</th>
+            </tr>
+            <tr class="bg-gray-200">
+                <td class="border px-4 py-2">錆止め処理 150mm アルミ用ネジ</td>
+                <td class="border px-4 py-2">松風</td>
+                <td class="border px-4 py-2">111</td>
+                <td class="border px-4 py-2">205876902</td>
+                <td class="border px-4 py-2">23</td>
+                <td class="border px-4 py-2">100,000</td>
+                <td class="border px-4 py-2">2,300,000</td>
+                <th class="border px-4 py-2">2023/10/01</th>
+            </tr>
+            <tr>
+                <td class="border px-4 py-2">W 1000 H1000 ABS板</td>
+                <td class="border px-4 py-2">三井物産</td>
+                <td class="border px-4 py-2">201</td>
+                <td class="border px-4 py-2">105497413</td>
+                <td class="border px-4 py-2">30,000</td>
+                <td class="border px-4 py-2">100</td>
+                <td class="border px-4 py-2">3,000,000</td>
+                <th class="border px-4 py-2">2023/10/15</th>
+            </tr>
+            <tr class="bg-gray-200">
+                <td class="border px-4 py-2">W 2000 H2000 ABS板</td>
+                <td class="border px-4 py-2">三井物産</td>
+                <td class="border px-4 py-2">201</td>
+                <td class="border px-4 py-2">105497414</td>
+                <td class="border px-4 py-2">60,000</td>
+                <td class="border px-4 py-2">50</td>
+                <td class="border px-4 py-2">3,000,000</td>
+                <th class="border px-4 py-2">2023/10/01</th>
+            </tr>
+            <tr>
+                <td class="border px-4 py-2">耐熱  錆止め UVカット塗料 White 15L</td>
+                <td class="border px-4 py-2">三井物産</td>
+                <td class="border px-4 py-2">201</td>
+                <td class="border px-4 py-2">105497505</td>
+                <td class="border px-4 py-2">30,000</td>
+                <td class="border px-4 py-2">10</td>
+                <td class="border px-4 py-2">300,000</td>
+                <th class="border px-4 py-2">2023/10/15</th>
+            </tr>
+            <tr class="bg-gray-200">
+                <td class="border px-4 py-2">耐熱 錆止め UVカット塗料 Black 15L</td>
+                <td class="border px-4 py-2">三井物産</td>
+                <td class="border px-4 py-2">201</td>
+                <td class="border px-4 py-2">105497506</td>
+                <td class="border px-4 py-2">30,000</td>
+                <td class="border px-4 py-2">10</td>
+                <td class="border px-4 py-2">300,000</td>
+                <th class="border px-4 py-2">2023/10/15</th>
+            </tr>
+            <tr>
+                <td class="border px-4 py-2">耐熱  錆止め UVカット塗料 Blue 15L</td>
+                <td class="border px-4 py-2">三井物産</td>
+                <td class="border px-4 py-2">201</td>
+                <td class="border px-4 py-2">105497507</td>
+                <td class="border px-4 py-2">30,000</td>
+                <td class="border px-4 py-2">10</td>
+                <td class="border px-4 py-2">300,000</td>
+                <th class="border px-4 py-2">2023/10/15</th>
+            </tr>
+            <tr class="bg-gray-200">
+                <td class="border px-4 py-2">耐熱 錆止め UVカット塗料 yellow 15L</td>
+                <td class="border px-4 py-2">三井物産</td>
+                <td class="border px-4 py-2">201</td>
+                <td class="border px-4 py-2">105497508</td>
+                <td class="border px-4 py-2">30,000</td>
+                <td class="border px-4 py-2">10</td>
+                <td class="border px-4 py-2">300,000</td>
+                <th class="border px-4 py-2">2023/10/15</th>
+            </tr>
+            </tbody>
+          </table>
+    </section>
+    <!-- MainContents[end] -->
+
+
+</body>
+</html>
+
+<!-- <button class="flex mx-auto mt-16 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button>-->
